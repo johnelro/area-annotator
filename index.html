@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Area Annotator for Google Maps</title>
+<meta name="description" content="A Chrome extension to draw numbered, colored polygon areas on Google Maps and export their coordinates as GeoJSON, WKT or Lat/Lng JSON.">
+<link rel="icon" href="images/icon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="./"><img src="images/icon.svg" alt="">Area Annotator</a>
+  <nav><a href="#features">Features</a><a href="#support">Support</a><a href="privacy.html">Privacy</a></nav>
+</div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+  <h1>Draw, number and color areas right on Google Maps</h1>
+  <p>Trace barangays, cities, lots, islands or whole provinces, then export the coordinates in one click. No more copying points one by one.</p>
+  <a class="btn" href="#install">Get the extension</a><a class="btn ghost" href="#how">How it works</a>
+  <img class="shot" src="images/screenshot-1.png" width="1280" height="800" alt="Metro Manila cities drawn as numbered, colored areas on Google Maps, with the Area Annotator panel listing each city and its size">
+</div></div>
+
+<section id="features"><div class="wrap">
+  <h2>What you can do</h2>
+  <div class="grid">
+    <div class="card"><h3>Draw areas</h3><p>Click around a border to trace it. Pan and zoom freely while you draw.</p></div>
+    <div class="card"><h3>Several shapes per area</h3><p>Keep islands or split cities together in one area, and name each shape.</p></div>
+    <div class="card"><h3>Numbers, names and colors</h3><p>Areas are numbered automatically. Pick a fill color and give each a name.</p></div>
+    <div class="card"><h3>Sizes</h3><p>See each shape's and area's size in km², hectares or m², matching Google Maps' measure tool.</p></div>
+    <div class="card"><h3>Edit anytime</h3><p>Drag points to move them, add points between them, or right-click to remove one.</p></div>
+    <div class="card"><h3>Export</h3><p>GeoJSON, WKT or Lat/Lng JSON for QGIS, PostGIS, Leaflet, Mapbox or the Google Maps API.</p></div>
+  </div>
+</div></section>
+
+<section class="gallery" style="background:#f8fafd"><div class="wrap">
+  <div class="grid">
+    <img src="images/screenshot-2.png" width="1280" height="800" loading="lazy" alt="Caloocan as one area made of two named shapes, North and South Caloocan, with their sizes">
+    <img src="images/screenshot-3.png" width="1280" height="800" loading="lazy" alt="Tracing the border of San Juan point by point">
+    <img src="images/screenshot-4.png" width="1280" height="800" loading="lazy" alt="Editing the points of Mandaluyong">
+    <img src="images/screenshot-5.png" width="1280" height="800" loading="lazy" alt="Exporting Taguig as GeoJSON">
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <h2>How it works</h2>
+  <ol>
+    <li>Open <a href="https://www.google.com/maps">Google Maps</a>. The Area Annotator panel appears at the top right.</li>
+    <li>Click <strong>+ New area</strong>, then click points around the border on the map.</li>
+    <li>Click the first point or press <kbd>Enter</kbd> to finish. <kbd>Backspace</kbd> undoes a point and <kbd>Esc</kbd> cancels.</li>
+    <li>Name the area, pick a color, and add more shapes if needed.</li>
+    <li>Open <strong>Export this area</strong>, choose a format, and click <strong>Copy</strong> or <strong>Download</strong>.</li>
+  </ol>
+  <p class="muted">Works in Map and Satellite view. Shapes are hidden in tilted, rotated or 3D views.</p>
+</div></section>
+
+<section id="install" style="background:#f8fafd"><div class="wrap">
+  <h2>Get the extension</h2>
+  <p>Area Annotator is free on the Chrome Web Store and works in Chrome and Microsoft Edge.</p>
+</div></section>
+
+<section id="support"><div class="wrap">
+  <h2>Support</h2>
+  <p>Found a bug or have an idea? <a href="https://github.com/johnelro/area-annotator/issues">Open an issue on GitHub</a>. Please include what you were doing, your browser version, and a screenshot if you can.</p>
+  <p>Your areas are stored only in your browser. Read the <a href="privacy.html">privacy policy</a>.</p>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <span>Made by John Elro Karl Estoque · <a href="https://github.com/johnelro">GitHub</a> · <a href="https://www.facebook.com/john.elro.karl.estoque">Facebook</a></span>
+  <span>Not affiliated with Google. Google Maps is a trademark of Google LLC.</span>
+</div></footer>
+</body>
+</html>
